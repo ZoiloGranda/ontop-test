@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LogoComponent } from './header/logo/logo.component';
 import { ItemComponent } from './header/item/item.component';
+import { ProfileComponent } from './header/profile/profile.component';
+import { ArrowComponent } from './assets/svg/arrow/arrow.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { ItemComponent } from './header/item/item.component';
     HeaderComponent,
     LogoComponent,
     ItemComponent,
+    ProfileComponent,
+    ArrowComponent,
   ],
   imports: [
     BrowserModule,

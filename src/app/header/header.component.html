@@ -1,8 +1,11 @@
-<div class="grid grid-cols-12 py-9	pl-20 pr-24">
- <div class="grid grid-cols-12 col-span-10 border-r-2 border-r-zinc-600">
+<div class="grid grid-cols-12 py-9	pl-20 pr-24 h-28 content-center">
+ <div class="grid grid-cols-12 col-span-10 border-r-2 content-center border-r-zinc-500">
   <app-logo class="col-span-2"></app-logo>
   <span class="col-span-2"></span>
-  <app-item class="col-span-2" *ngFor="let item of data; index as i;" [leftIcon]="item.leftIcon"
+  <app-item class="col-span-2 self-center" *ngFor="let item of data; index as i;" [leftIcon]="item.leftIcon"
    [rightIcon]="item.rightIcon" [title]="item.title"></app-item>
+ </div>
+ <div class="grid grid-cols-12">
+  <app-profile class="col-span-12"></app-profile>
  </div>
 </div>
