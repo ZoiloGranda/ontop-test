@@ -12,6 +12,15 @@
   line-height: 2.37rem;
 }
 
+.rounded-5px {
+ border-radius: 5px;
+}
+
+.border-05px {
+border-width: 0.5px;
+}
+
+
 @font-face {
   font-family: aileron;
   src: url(assets/fonts/Aileron-Light.otf);
