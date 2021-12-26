@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./svg-loader.component.scss'],
 })
 export class SvgLoaderComponent implements OnInit {
-  @Input() iconName: string = 'arrow';
+  @Input() iconName: string = '';
   @Input() fillColor: string = 'black';
   @Input() strokeColor: string = 'red';
 

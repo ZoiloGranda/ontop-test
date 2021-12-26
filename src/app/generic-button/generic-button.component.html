@@ -1,7 +1,8 @@
-<div class="overflow-hidden w-auto bg-gray-235-235-235">
- <button class="font-bold py-2 px-4 w-full grid grid-cols-12 items-center">
-  <app-svg-loader class="col-span-2"iconName="filter" fillColor="#DADADA" strokeColor="#DADADA"></app-svg-loader>
-  <span class="col-span-8">{{title}}</span>
-  <app-svg-loader class="col-span-2" iconName="filter" fillColor="#DADADA" strokeColor="#DADADA"></app-svg-loader>
- </button>
-</div>
+<button [ngClass]="[
+ 'font-bold py-2 px-4 h-full grid grid-cols-max-3 items-center',
+ btnBgColorClass
+]">
+ <app-svg-loader class="" [iconName]="leftIconName" fillColor="black" strokeColor="black"></app-svg-loader>
+ <span class="px-1">{{title}}</span>
+ <app-svg-loader class="" [iconName]="rightIconName"></app-svg-loader>
+</button>
