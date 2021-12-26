@@ -14,6 +14,9 @@ import { TitleComponent } from './contracts/title/title.component';
 import { ControlsComponent } from './contracts/controls/controls.component';
 import { SearchBarComponent } from './contracts/controls/search-bar/search-bar.component';
 import { SearchComponent } from './assets/svg/search/search.component';
+import { GenericButtonComponent } from './generic-button/generic-button.component';
+import { FilterComponent } from './assets/svg/filter/filter.component';
+import { SvgLoaderComponent } from './assets/svg/svg-loader/svg-loader.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { SearchComponent } from './assets/svg/search/search.component';
     ControlsComponent,
     SearchBarComponent,
     SearchComponent,
+    GenericButtonComponent,
+    FilterComponent,
+    SvgLoaderComponent,
   ],
   imports: [
     BrowserModule,

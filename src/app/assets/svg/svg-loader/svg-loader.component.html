@@ -1,0 +1,11 @@
+<div [ngSwitch]="iconName">
+ <div *ngSwitchCase="'arrow'">
+  <assets-svg-arrow [fillColor]="fillColor" [strokeColor]="strokeColor"></assets-svg-arrow>
+ </div>
+ <div *ngSwitchCase="'search'">
+  <assets-svg-search [fillColor]="fillColor" [strokeColor]="strokeColor"></assets-svg-search>
+ </div>
+ <div *ngSwitchCase="'filter'">
+  <assets-svg-filter [fillColor]="fillColor" [strokeColor]="strokeColor"></assets-svg-filter>
+ </div>
+</div>

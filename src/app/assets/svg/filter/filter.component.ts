@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'assets-svg-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.scss'],
+  selector: 'assets-svg-filter',
+  templateUrl: './filter.component.html',
+  styleUrls: ['./filter.component.scss'],
 })
-export class SearchComponent implements OnInit {
+export class FilterComponent implements OnInit {
   @Input() fillColor: string = 'black';
   @Input() strokeColor: string = 'red';
 
