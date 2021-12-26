@@ -10,6 +10,7 @@ import { ProfileComponent } from './header/profile/profile.component';
 import { ArrowComponent } from './assets/svg/arrow/arrow.component';
 import { BodyWrapperComponent } from './body-wrapper/body-wrapper.component';
 import { ContractsComponent } from './contracts/contracts.component';
+import { TitleComponent } from './contracts/title/title.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContractsComponent } from './contracts/contracts.component';
     ArrowComponent,
     BodyWrapperComponent,
     ContractsComponent,
+    TitleComponent,
   ],
   imports: [
     BrowserModule,

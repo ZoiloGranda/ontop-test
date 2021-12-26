@@ -1,8 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-.grid-cols-max-3{
- grid-template-columns: max-content max-content max-content;
+.grid-cols-max-3 {
+  grid-template-columns: max-content max-content max-content;
+}
+
+.text-3-5xl {
+  font-size: 2rem;
+  line-height: 2.37rem;
+}
+
+@font-face {
+  font-family: aileron;
+  src: url(assets/fonts/Aileron-Light.otf);
+}
+* {
+  font-family: aileron, Arial, Helvetica, sans-serif;
 }
