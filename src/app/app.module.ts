@@ -8,6 +8,8 @@ import { LogoComponent } from './header/logo/logo.component';
 import { ItemComponent } from './header/item/item.component';
 import { ProfileComponent } from './header/profile/profile.component';
 import { ArrowComponent } from './assets/svg/arrow/arrow.component';
+import { BodyWrapperComponent } from './body-wrapper/body-wrapper.component';
+import { ContractsComponent } from './contracts/contracts.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { ArrowComponent } from './assets/svg/arrow/arrow.component';
     ItemComponent,
     ProfileComponent,
     ArrowComponent,
+    BodyWrapperComponent,
+    ContractsComponent,
   ],
   imports: [
     BrowserModule,

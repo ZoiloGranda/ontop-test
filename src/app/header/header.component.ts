@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   data = [
     {
-      title: 'Contacts',
-      leftIcon: 'assets/icons/contacts.svg',
+      title: 'contracts',
+      leftIcon: 'assets/icons/contracts.svg',
       rightIcon: 'assets/icons/arrow.svg',
     },
     {
