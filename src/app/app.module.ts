@@ -24,6 +24,7 @@ import { THeadComponent } from './contracts/table/t-head/t-head.component';
 import { TRowComponent } from './contracts/table/t-row/t-row.component';
 import { ContractsIconComponent } from './assets/svg/contracts-icon/contracts-icon.component';
 import { DocumentIconComponent } from './assets/svg/document-icon/document-icon.component';
+import { PayoutIconComponent } from './assets/svg/payout-icon/payout-icon.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { DocumentIconComponent } from './assets/svg/document-icon/document-icon.
     THeadComponent,
     TRowComponent,
     ContractsIconComponent,
-    DocumentIconComponent
+    DocumentIconComponent,
+    PayoutIconComponent
   ],
   imports: [
     BrowserModule,
