@@ -17,6 +17,7 @@ import { SearchComponent } from './assets/svg/search/search.component';
 import { GenericButtonComponent } from './generic-button/generic-button.component';
 import { FilterComponent } from './assets/svg/filter/filter.component';
 import { SvgLoaderComponent } from './assets/svg/svg-loader/svg-loader.component';
+import { AddComponent } from './assets/svg/add/add.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { SvgLoaderComponent } from './assets/svg/svg-loader/svg-loader.component
     GenericButtonComponent,
     FilterComponent,
     SvgLoaderComponent,
+    AddComponent,
   ],
   imports: [
     BrowserModule,
