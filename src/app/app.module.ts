@@ -18,6 +18,7 @@ import { GenericButtonComponent } from './generic-button/generic-button.componen
 import { FilterComponent } from './assets/svg/filter/filter.component';
 import { SvgLoaderComponent } from './assets/svg/svg-loader/svg-loader.component';
 import { AddComponent } from './assets/svg/add/add.component';
+import { GenericDropdownComponent } from './generic-dropdown/generic-dropdown.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { AddComponent } from './assets/svg/add/add.component';
     FilterComponent,
     SvgLoaderComponent,
     AddComponent,
+    GenericDropdownComponent,
   ],
   imports: [
     BrowserModule,
