@@ -52,6 +52,29 @@
   color: #898989;
 }
 
+.text-coral-FF5A70 {
+  color: #ff5a70;
+}
+
+.custom-border {
+  position: relative;
+}
+
+.custom-border:after {
+  content: " ";
+  position: absolute;
+  border-right: 1px solid #c4c4c4;
+  top: 20%;
+  right: 0;
+  height: 45px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.h-108px {
+  height: 108px;
+}
+
 @font-face {
   font-family: aileron;
   src: url(assets/fonts/Aileron-Light.otf);

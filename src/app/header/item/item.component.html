@@ -1,9 +1,10 @@
 <div class="grid grid-cols-max-3 items-center">
  <div>
-  <app-svg-loader [iconName]="leftIcon" [fillColor]="leftIconColor"></app-svg-loader>
+  <app-svg-loader [iconName]="item.leftIcon" [fillColor]="item.leftIconColor"></app-svg-loader>
  </div>
- <p class="px-2 font-bold">{{title}}</p>
+ <p [ngClass]="{'text-lg px-2 font-bold' : true, 'text-gray-898989': !item.active, 'text-coral-FF5A70': item.active}">
+  {{item.title}}</p>
  <div>
-  <app-svg-loader [iconName]="rightIcon" [fillColor]="rightIconColor"></app-svg-loader>
+  <app-svg-loader [iconName]="item.rightIcon" [fillColor]="item.rightIconColor"></app-svg-loader>
  </div>
 </div>

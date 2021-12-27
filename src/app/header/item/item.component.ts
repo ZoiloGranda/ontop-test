@@ -6,11 +6,21 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./item.component.scss'],
 })
 export class ItemComponent implements OnInit {
-  @Input() title: string = 'Default Title';
-  @Input() leftIcon: string = '';
-  @Input() leftIconColor: string = '';
-  @Input() rightIcon: string = '';
-  @Input() rightIconColor: string = '';
+  @Input() item: {
+    title: string;
+    leftIcon: string;
+    leftIconColor: string;
+    rightIcon: string;
+    rightIconColor: string;
+    active: boolean;
+  } = {
+    title: '',
+    leftIcon: '',
+    leftIconColor: '',
+    rightIcon: '',
+    rightIconColor: '',
+    active: false,
+  };
 
   constructor() {}
 

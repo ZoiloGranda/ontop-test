@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
       leftIconColor: '#FF5A70',
       rightIcon: 'arrow',
       rightIconColor: '#FF5A70',
+      active: true,
     },
     {
       title: 'Documents',
@@ -20,6 +21,7 @@ export class HeaderComponent implements OnInit {
       leftIconColor: '#898989',
       rightIcon: 'arrow',
       rightIconColor: '#898989',
+      active: false,
     },
     {
       title: 'Payout',
@@ -27,6 +29,7 @@ export class HeaderComponent implements OnInit {
       leftIconColor: '#898989',
       rightIcon: 'arrow',
       rightIconColor: '#898989',
+      active: false,
     },
     {
       title: 'Time',
@@ -34,6 +37,7 @@ export class HeaderComponent implements OnInit {
       leftIconColor: '#898989',
       rightIcon: 'arrow',
       rightIconColor: '#898989',
+      active: false,
     },
   ];
   constructor() {}
