@@ -6,8 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./search.component.scss'],
 })
 export class SearchComponent implements OnInit {
-  @Input() fillColor: string = 'black';
-  @Input() strokeColor: string = 'red';
+  @Input() fillColor: string = '';
+  @Input() strokeColor: string = '';
 
   constructor() {}
 

@@ -25,6 +25,7 @@ import { TRowComponent } from './contracts/table/t-row/t-row.component';
 import { ContractsIconComponent } from './assets/svg/contracts-icon/contracts-icon.component';
 import { DocumentIconComponent } from './assets/svg/document-icon/document-icon.component';
 import { PayoutIconComponent } from './assets/svg/payout-icon/payout-icon.component';
+import { TimeIconComponent } from './assets/svg/time-icon/time-icon.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { PayoutIconComponent } from './assets/svg/payout-icon/payout-icon.compon
     TRowComponent,
     ContractsIconComponent,
     DocumentIconComponent,
-    PayoutIconComponent
+    PayoutIconComponent,
+    TimeIconComponent
   ],
   imports: [
     BrowserModule,
