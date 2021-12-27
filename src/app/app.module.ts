@@ -19,6 +19,9 @@ import { FilterComponent } from './assets/svg/filter/filter.component';
 import { SvgLoaderComponent } from './assets/svg/svg-loader/svg-loader.component';
 import { AddComponent } from './assets/svg/add/add.component';
 import { GenericDropdownComponent } from './generic-dropdown/generic-dropdown.component';
+import { TableComponent } from './contracts/table/table.component';
+import { THeadComponent } from './contracts/table/t-head/t-head.component';
+import { TRowComponent } from './contracts/table/t-row/t-row.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +42,9 @@ import { GenericDropdownComponent } from './generic-dropdown/generic-dropdown.co
     SvgLoaderComponent,
     AddComponent,
     GenericDropdownComponent,
+    TableComponent,
+    THeadComponent,
+    TRowComponent,
   ],
   imports: [
     BrowserModule,
