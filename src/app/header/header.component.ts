@@ -8,24 +8,32 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   data = [
     {
-      title: 'contracts',
-      leftIcon: 'assets/icons/contracts.svg',
-      rightIcon: 'assets/icons/arrow.svg',
+      title: 'Contracts',
+      leftIcon: 'contracts',
+      leftIconColor: '#FF5A70',
+      rightIcon: 'arrow',
+      rightIconColor: '#FF5A70',
     },
     {
       title: 'Documents',
-      leftIcon: 'assets/icons/document.svg',
-      rightIcon: 'assets/icons/arrow.svg',
+      leftIcon: 'document',
+      leftIconColor: '#898989',
+      rightIcon: 'arrow',
+      rightIconColor: '#898989',
     },
     {
       title: 'Payout',
-      leftIcon: 'assets/icons/payout.svg',
-      rightIcon: 'assets/icons/arrow.svg',
+      leftIcon: 'payout',
+      leftIconColor: '#898989',
+      rightIcon: 'arrow',
+      rightIconColor: '#898989',
     },
     {
       title: 'Time',
-      leftIcon: 'assets/icons/time.svg',
-      rightIcon: 'assets/icons/arrow.svg',
+      leftIcon: 'time',
+      leftIconColor: '#898989',
+      rightIcon: 'arrow',
+      rightIconColor: '#898989',
     },
   ];
   constructor() {}

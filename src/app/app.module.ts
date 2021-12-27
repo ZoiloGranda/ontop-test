@@ -22,6 +22,7 @@ import { GenericDropdownComponent } from './generic-dropdown/generic-dropdown.co
 import { TableComponent } from './contracts/table/table.component';
 import { THeadComponent } from './contracts/table/t-head/t-head.component';
 import { TRowComponent } from './contracts/table/t-row/t-row.component';
+import { ContractsIconComponent } from './assets/svg/contracts-icon/contracts-icon.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { TRowComponent } from './contracts/table/t-row/t-row.component';
     TableComponent,
     THeadComponent,
     TRowComponent,
+    ContractsIconComponent
   ],
   imports: [
     BrowserModule,

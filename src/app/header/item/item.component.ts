@@ -6,9 +6,11 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./item.component.scss'],
 })
 export class ItemComponent implements OnInit {
-  @Input() title: string = "Default Title";
-  @Input() leftIcon: string = "assets/icons/contracts.svg";
-  @Input() rightIcon: string = "assets/icons/arrow.svg";
+  @Input() title: string = 'Default Title';
+  @Input() leftIcon: string = '';
+  @Input() leftIconColor: string = '';
+  @Input() rightIcon: string = '';
+  @Input() rightIconColor: string = '';
 
   constructor() {}
 

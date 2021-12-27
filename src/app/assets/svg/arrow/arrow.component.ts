@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ArrowComponent implements OnInit {
   @Input() fillColor: string = 'grey';
-  @Input() strokeColor: string = 'red';
+  @Input() strokeColor: string = '';
   @Input() width: string = '16';
   @Input() height: string = '16';
 

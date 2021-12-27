@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SvgLoaderComponent implements OnInit {
   @Input() iconName: string = '';
   @Input() fillColor: string = 'black';
-  @Input() strokeColor: string = 'red';
+  @Input() strokeColor: string = '';
 
   constructor() {}
 
