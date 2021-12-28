@@ -6,7 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnInit {
-  tableData: { headers: string[]; rows: {}[] } = {
+  tableData: {
+    headers: string[];
+    rows: {
+      profilePic: string;
+      contractorName: string;
+      type: string;
+      startDate: string;
+      amount: string;
+      status: string;
+      actions: string[];
+    }[];
+  } = {
     headers: [
       'Contractor Name',
       'Type',

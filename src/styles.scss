@@ -12,6 +12,11 @@
   line-height: 2.37rem;
 }
 
+.text-xxs {
+  font-size: 0.625rem;
+  line-height: 0.7rem;
+}
+
 .rounded-5px {
   border-radius: 5px;
 }
@@ -26,6 +31,14 @@
 
 .bg-gray-F9F9F9 {
   background-color: #f9f9f9;
+}
+
+.bg-green-custom {
+  background: rgba(54, 207, 130, 0.18);
+}
+
+.bg-orange-custom {
+  background: rgba(242, 157, 66, 0.3);
 }
 
 .bg-red-FF5A70 {
@@ -64,6 +77,13 @@
   color: #ff5a70;
 }
 
+.text-green-36CF82 {
+  color: #36cf82;
+}
+
+.text-orange-F29D42 {
+  color: #f29d42;
+}
 .custom-border {
   position: relative;
 }
@@ -81,6 +101,10 @@
 
 .h-108px {
   height: 108px;
+}
+
+.pr-full {
+  padding-right: 100%;
 }
 
 @font-face {

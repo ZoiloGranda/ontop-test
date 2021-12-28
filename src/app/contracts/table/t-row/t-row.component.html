@@ -23,9 +23,9 @@
    <span>{{item.amount}}</span>
   </div>
  </td>
- <td class="col-span-2 py-3">
-  <div class="">
-   <span>{{item.status}}</span>
+ <td class="col-span-2 py-3 justify-self-stretch">
+  <div class="grid grid-cols-12">
+   <app-generic-label class="col-start-4 col-span-9 grid grid-cols-2" [text]="item.status"></app-generic-label>
   </div>
  </td>
  <td class="col-span-2 py-3">

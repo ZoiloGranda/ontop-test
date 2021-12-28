@@ -7,14 +7,24 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TRowComponent implements OnInit {
   @Input() rows: {
-    profilePic?: string;
-    contractorName?: string;
-    type?: string;
-    startDate?: string;
-    amount?: string;
-    status?: string;
-    actions?: string[];
-  }[] = [{}];
+    profilePic: string;
+    contractorName: string;
+    type: string;
+    startDate: string;
+    amount: string;
+    status: string;
+    actions: string[];
+  }[] = [
+    {
+      profilePic: '',
+      contractorName: '',
+      type: '',
+      startDate: '',
+      amount: '',
+      status: '',
+      actions: [''],
+    },
+  ];
 
   constructor() {}
 

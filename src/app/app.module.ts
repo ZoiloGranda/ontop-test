@@ -26,6 +26,8 @@ import { ContractsIconComponent } from './assets/svg/contracts-icon/contracts-ic
 import { DocumentIconComponent } from './assets/svg/document-icon/document-icon.component';
 import { PayoutIconComponent } from './assets/svg/payout-icon/payout-icon.component';
 import { TimeIconComponent } from './assets/svg/time-icon/time-icon.component';
+import { GenericLabelComponent } from './generic-label/generic-label.component';
+import { DotIconComponent } from './assets/svg/dot-icon/dot-icon.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { TimeIconComponent } from './assets/svg/time-icon/time-icon.component';
     ContractsIconComponent,
     DocumentIconComponent,
     PayoutIconComponent,
-    TimeIconComponent
+    TimeIconComponent,
+    GenericLabelComponent,
+    DotIconComponent
   ],
   imports: [
     BrowserModule,
