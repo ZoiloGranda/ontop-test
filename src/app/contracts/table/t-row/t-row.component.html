@@ -1,10 +1,10 @@
-<tr class="grid grid-cols-12 border-b border-gray-200 hover:bg-blue-200 bg-gray-F9F9F9 place-items-center h-90px"
+<tr class="grid grid-cols-12 border-b hover:bg-blue-200 bg-gray-F9F9F9 place-items-center h-90px text-brown-3B3B3B"
  *ngFor="let item of rows; index as i;">
  <td class="py-3 whitespace-nowrap grid grid-cols-12 col-span-2">
   <div class="col-span-3">
    <img [src]="item.profilePic" alt="">
   </div>
-  <div class="col-span-6">
+  <div class="col-span-5 col-start-4 self-center">
    <span>{{item.contractorName}}</span>
   </div>
  </td>
