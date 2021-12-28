@@ -28,6 +28,10 @@ import { PayoutIconComponent } from './assets/svg/payout-icon/payout-icon.compon
 import { TimeIconComponent } from './assets/svg/time-icon/time-icon.component';
 import { GenericLabelComponent } from './generic-label/generic-label.component';
 import { DotIconComponent } from './assets/svg/dot-icon/dot-icon.component';
+import { GenericActionsListComponent } from './generic-actions-list/generic-actions-list.component';
+import { EditIconComponent } from './assets/svg/edit-icon/edit-icon.component';
+import { SignIconComponent } from './assets/svg/sign-icon/sign-icon.component';
+import { DeleteIconComponent } from './assets/svg/delete-icon/delete-icon.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +60,11 @@ import { DotIconComponent } from './assets/svg/dot-icon/dot-icon.component';
     PayoutIconComponent,
     TimeIconComponent,
     GenericLabelComponent,
-    DotIconComponent
+    DotIconComponent,
+    GenericActionsListComponent,
+    EditIconComponent,
+    SignIconComponent,
+    DeleteIconComponent
   ],
   imports: [
     BrowserModule,

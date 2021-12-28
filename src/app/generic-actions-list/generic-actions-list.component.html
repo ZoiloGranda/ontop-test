@@ -1,0 +1,7 @@
+<div class="grid grid-cols-1 absolute rounded-5px overflow-auto drop-shadow-custom-2" >
+ <div class="col-span-1 grid grid-cols-12 h-10 bg-white custom-border-bottom	pl-1 content-center"
+  *ngFor="let item of actions; index as i;">
+  <app-svg-loader [iconName]="item.icon" [fillColor]="item.iconColor"></app-svg-loader>
+  <p class="col-span-8 text-sm text-brown-3B3B3B">{{item.label}}</p>
+ </div>
+</div>
