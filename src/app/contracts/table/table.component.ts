@@ -15,7 +15,12 @@ export class TableComponent implements OnInit {
       startDate: string;
       amount: string;
       status: string;
-      actions: string[];
+      actions: {
+        label: string;
+        value: string;
+        icon: string;
+        iconColor: string;
+      }[];
     }[];
   } = {
     headers: [
@@ -34,7 +39,22 @@ export class TableComponent implements OnInit {
         startDate: 'Mar 4, 2021',
         amount: '$200 USD',
         status: 'Active',
-        actions: ['Edit', 'Sign', 'View summary', 'Delete'],
+        actions: [
+          { label: 'Edit', value: 'edit', icon: 'edit', iconColor: '#898989' },
+          { label: 'Sign', value: 'sign', icon: 'sign', iconColor: '#898989' },
+          {
+            label: 'View Summary',
+            value: 'viewSummary',
+            icon: 'document',
+            iconColor: '#898989',
+          },
+          {
+            label: 'Delete',
+            value: 'delete',
+            icon: 'delete',
+            iconColor: '#FF5A70',
+          },
+        ],
       },
       {
         profilePic: 'assets/imgs/user_pic_2.png',
@@ -43,7 +63,22 @@ export class TableComponent implements OnInit {
         startDate: 'Mar 4, 2021',
         amount: '$200 USD',
         status: 'Active',
-        actions: ['Edit', 'Sign', 'View summary', 'Delete'],
+        actions: [
+          { label: 'Edit', value: 'edit', icon: 'edit', iconColor: '#898989' },
+          { label: 'Sign', value: 'sign', icon: 'sign', iconColor: '#898989' },
+          {
+            label: 'View Summary',
+            value: 'viewSummary',
+            icon: 'document',
+            iconColor: '#898989',
+          },
+          {
+            label: 'Delete',
+            value: 'delete',
+            icon: 'delete',
+            iconColor: '#FF5A70',
+          },
+        ],
       },
       {
         profilePic: 'assets/imgs/user_pic_3.png',
@@ -52,7 +87,22 @@ export class TableComponent implements OnInit {
         startDate: 'Mar 4, 2021',
         amount: '$200 USD',
         status: 'Signature Pending',
-        actions: ['Edit', 'Sign', 'View summary', 'Delete'],
+        actions: [
+          { label: 'Edit', value: 'edit', icon: 'edit', iconColor: '#898989' },
+          { label: 'Sign', value: 'sign', icon: 'sign', iconColor: '#898989' },
+          {
+            label: 'View Summary',
+            value: 'viewSummary',
+            icon: 'document',
+            iconColor: '#898989',
+          },
+          {
+            label: 'Delete',
+            value: 'delete',
+            icon: 'delete',
+            iconColor: '#FF5A70',
+          },
+        ],
       },
     ],
   };

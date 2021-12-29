@@ -13,7 +13,12 @@ export class TRowComponent implements OnInit {
     startDate: string;
     amount: string;
     status: string;
-    actions: string[];
+    actions: {
+      label: string;
+      value: string;
+      icon: string;
+      iconColor: string;
+    }[];
   }[] = [
     {
       profilePic: '',
@@ -22,9 +27,15 @@ export class TRowComponent implements OnInit {
       startDate: '',
       amount: '',
       status: '',
-      actions: [''],
+      actions: [{ label: '', value: '', icon: '', iconColor: '' }],
     },
   ];
+  menuIsVisible = [false];
+
+  toggleVisibleMenu = (index: number) => {
+    this.menuIsVisible.fill(false);
+    this.menuIsVisible[index] = true;
+  };
 
   constructor() {}
 
