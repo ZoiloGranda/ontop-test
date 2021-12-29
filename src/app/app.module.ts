@@ -32,6 +32,7 @@ import { GenericActionsListComponent } from './generic-actions-list/generic-acti
 import { EditIconComponent } from './assets/svg/edit-icon/edit-icon.component';
 import { SignIconComponent } from './assets/svg/sign-icon/sign-icon.component';
 import { DeleteIconComponent } from './assets/svg/delete-icon/delete-icon.component';
+import { ThreeDotsIconComponent } from './assets/svg/three-dots-icon/three-dots-icon.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { DeleteIconComponent } from './assets/svg/delete-icon/delete-icon.compon
     GenericActionsListComponent,
     EditIconComponent,
     SignIconComponent,
-    DeleteIconComponent
+    DeleteIconComponent,
+    ThreeDotsIconComponent
   ],
   imports: [
     BrowserModule,

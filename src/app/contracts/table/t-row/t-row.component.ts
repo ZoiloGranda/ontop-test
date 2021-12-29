@@ -30,11 +30,16 @@ export class TRowComponent implements OnInit {
       actions: [{ label: '', value: '', icon: '', iconColor: '' }],
     },
   ];
-  menuIsVisible = [false];
+  menuIsVisible: boolean[] = [];
 
   toggleVisibleMenu = (index: number) => {
-    this.menuIsVisible.fill(false);
-    this.menuIsVisible[index] = true;
+    this.menuIsVisible[index] = this.menuIsVisible[index] ? true : false;
+    this.menuIsVisible = this.menuIsVisible.map((el, i) => {
+      if (el === false && index === i) el = true;
+      else if (el === true && index === i) el = false;
+      else el = false;
+      return el;
+    });
   };
 
   constructor() {}
