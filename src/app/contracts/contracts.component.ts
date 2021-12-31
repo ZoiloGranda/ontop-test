@@ -1,35 +1,19 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-
+import { TableDataType } from '../types';
 @Component({
   selector: 'app-contracts',
   templateUrl: './contracts.component.html',
   styleUrls: ['./contracts.component.scss'],
 })
 export class ContractsComponent implements OnInit {
-  tableData: {
-    headers: string[];
-    rows: {
-      profilePic: string;
-      contractorName: string;
-      type: string;
-      startDate: string;
-      amount: string;
-      status: string;
-      actions: {
-        label: string;
-        value: string;
-        icon: string;
-        iconColor: string;
-      }[];
-    }[];
-  } = {
+  tableData: TableDataType = {
     headers: [
-      'Contractor Name',
-      'Type',
-      'Start Date',
-      'Amount',
-      'Status',
-      'Actions',
+      { label: 'Contractor Name', key: 'contractorName' },
+      { label: 'Type', key: 'type' },
+      { label: 'Start Date', key: 'startDate' },
+      { label: 'Amount', key: 'amount' },
+      { label: 'Status', key: 'status' },
+      { label: 'Actions', key: 'actions' },
     ],
     rows: [
       {

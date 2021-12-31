@@ -1,31 +1,10 @@
 <div *ngFor="let item of tableData.rows; index as i;"
- class="bg-white p-3 col-span-12 w-full text-left grid grid-cols-12 rounded-5px drop-shadow-custom-2">
- <div class="col-span-12 grid grid-cols-12 bg-gray-F9F9F9 h-9 content-center">
-  <p class="col-span-5 font-bold col-start-2">{{tableData.headers[0]}}</p>
-  <p class="col-span-6">{{item.contractorName}}</p>
+ class="bg-white p-3 col-span-12 w-full text-left grid grid-flow-row auto-rows-auto rounded-5px drop-shadow-custom-2">
+ <div class="grid grid-cols-12"
+  *ngFor="let currentHeader of tableData.headers; index as headerIndex; even as even; last as last">
+  <contracts-mobile-table-row [isLast]="last" [isEven]="even" [header]="currentHeader.label"
+   [text]="item[currentHeader.key]">
+  </contracts-mobile-table-row>
  </div>
- <div class="col-span-12 grid grid-cols-12 h-9">
-  <p class="col-span-5 font-bold col-start-2">{{tableData.headers[1]}}</p>
-  <p class="col-span-6">{{item.type}}</p>
- </div>
- <div class="col-span-12 grid grid-cols-12 bg-gray-F9F9F9 h-9">
-  <p class="col-span-5 font-bold col-start-2">{{tableData.headers[2]}}</p>
-  <p class="col-span-6">{{item.startDate}}</p>
- </div>
- <div class="col-span-12 grid grid-cols-12 h-9">
-  <p class="col-span-5 font-bold col-start-2">{{tableData.headers[3]}}</p>
-  <p class="col-span-6">{{item.amount}}</p>
- </div>
- <div class="col-span-12 grid grid-cols-12 bg-gray-F9F9F9 h-9">
-  <p class="col-span-5 font-bold col-start-2">{{tableData.headers[4]}}</p>
-  <p class="col-span-6">{{item.status}}</p>
- </div>
- <div class="col-span-12 grid grid-cols-12 h-9">
-  <p class="col-span-5 font-bold col-start-2">{{tableData.headers[5]}}</p>
-  <p class="col-span-6">"item.actions"</p>
- </div>
- <div class="col-span-12 grid grid-cols-12 bg-gray-F9F9F9 h-9">
-  <p class="col-span-5 font-bold col-start-2">{{tableData.headers[0]}}</p>
-  <p class="col-span-6">{{item.contractorName}}</p>
- </div>
+
 </div>

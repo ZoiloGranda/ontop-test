@@ -9,6 +9,7 @@ export class SvgLoaderComponent implements OnInit {
   @Input() iconName: string = '';
   @Input() fillColor: string = 'black';
   @Input() strokeColor: string = '';
+  @Input() svgClasses: string = '';
 
   constructor() {}
 

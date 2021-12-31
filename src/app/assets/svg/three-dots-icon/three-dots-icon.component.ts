@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ThreeDotsIconComponent implements OnInit {
   @Input() fillColor: string = 'black';
   @Input() strokeColor: string = '';
+  @Input() svgClasses: string = '';
 
   constructor() {}
 

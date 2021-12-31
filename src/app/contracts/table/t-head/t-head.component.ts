@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TableHeadersType } from 'src/app/types';
 
 @Component({
   selector: 'contracts-table-head',
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./t-head.component.scss'],
 })
 export class THeadComponent implements OnInit {
-  @Input() items: string[] = [];
+  @Input() headers: TableHeadersType = [{ label: '', key: '' }];
 
   constructor() {}
 

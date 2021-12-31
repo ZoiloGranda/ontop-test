@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TableDataType } from 'src/app/types';
 
 @Component({
   selector: 'contracts-table',
@@ -6,24 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./table.component.scss'],
 })
 export class TableComponent implements OnInit {
-  @Input() tableData: {
-    headers: string[];
-    rows: {
-      profilePic: string;
-      contractorName: string;
-      type: string;
-      startDate: string;
-      amount: string;
-      status: string;
-      actions: {
-        label: string;
-        value: string;
-        icon: string;
-        iconColor: string;
-      }[];
-    }[];
-  } = {
-    headers: [''],
+  @Input() tableData: TableDataType = {
+    headers: [{ label: '', key: '' }],
     rows: [
       {
         profilePic: '',

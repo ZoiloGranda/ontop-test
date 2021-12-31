@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { TableDataType } from 'src/app/types';
 
 @Component({
   selector: 'contracts-mobile-table',
@@ -6,24 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./mobile-table.component.scss'],
 })
 export class MobileTableComponent implements OnInit {
-  @Input() tableData: {
-    headers: string[];
-    rows: {
-      profilePic: string;
-      contractorName: string;
-      type: string;
-      startDate: string;
-      amount: string;
-      status: string;
-      actions: {
-        label: string;
-        value: string;
-        icon: string;
-        iconColor: string;
-      }[];
-    }[];
-  } = {
-    headers: [''],
+  @Input() tableData: TableDataType = {
+    headers: [{ label: '', key: '' }],
     rows: [
       {
         profilePic: '',
