@@ -1,3 +1,6 @@
 <p class="col-span-5 font-bold col-start-2">{{header}}</p>
-<p *ngIf="!isLast" class="col-span-6">{{text}}</p>
-<app-svg-loader svgClasses="rotate-90 translate-x-3.5" *ngIf="isLast" class="col-span-6" iconName="three-dots" fillColor="#C4C4C4"></app-svg-loader>
+<p *ngIf="!isLast && header !== 'Status'"  class="col-span-6">{{text}}</p>
+<app-generic-label *ngIf="header === 'Status'" class="col-span-4 grid grid-cols-2" [text]="text">
+</app-generic-label>
+<app-svg-loader svgClasses="rotate-90 translate-x-3.5" *ngIf="isLast" class="col-span-6" iconName="three-dots"
+ fillColor="#C4C4C4"></app-svg-loader>
