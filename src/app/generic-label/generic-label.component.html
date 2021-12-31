@@ -1,5 +1,5 @@
 <div
- [ngClass]="{'text-xxs inline-flex items-center font-bold leading-sm py-1 pl-2 rounded-full col-span-2' : true, 'bg-green-custom text-green-36CF82': text === 'Active', 'bg-orange-custom text-orange-F29D42': text !=='Active'}">
+ [ngClass]="{'text-xxs inline-flex items-center font-bold leading-sm py-1 pl-2 rounded-full col-span-2 h-6' : true, 'bg-green-custom text-green-36CF82': text === 'Active', 'bg-orange-custom text-orange-F29D42': text !=='Active'}">
  <assets-svg-dot-icon class="pr-2" [fillColor]="text ==='Active' ? '#36CF82' : '#F29D42'"></assets-svg-dot-icon>
  <p>{{text}}</p>
 </div>
