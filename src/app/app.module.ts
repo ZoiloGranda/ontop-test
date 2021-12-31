@@ -33,6 +33,7 @@ import { EditIconComponent } from './assets/svg/edit-icon/edit-icon.component';
 import { SignIconComponent } from './assets/svg/sign-icon/sign-icon.component';
 import { DeleteIconComponent } from './assets/svg/delete-icon/delete-icon.component';
 import { ThreeDotsIconComponent } from './assets/svg/three-dots-icon/three-dots-icon.component';
+import { ThreeBarsIconComponent } from './assets/svg/three-bars-icon/three-bars-icon.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { ThreeDotsIconComponent } from './assets/svg/three-dots-icon/three-dots-
     EditIconComponent,
     SignIconComponent,
     DeleteIconComponent,
-    ThreeDotsIconComponent
+    ThreeDotsIconComponent,
+    ThreeBarsIconComponent
   ],
   imports: [
     BrowserModule,
