@@ -27,11 +27,7 @@ export class MobileTableRowComponent implements OnInit {
     });
   };
 
-  constructor() {
-    console.log(this.rowIndex);
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.header);
-  }
+  ngOnInit(): void {}
 }
