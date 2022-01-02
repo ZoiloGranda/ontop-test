@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { TableRowActionsType, TableRowActionsTypeInitialized } from '../types';
 
 @Component({
   selector: 'app-generic-actions-list',
@@ -6,12 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./generic-actions-list.component.scss'],
 })
 export class GenericActionsListComponent implements OnInit {
-  @Input() actions: {
-    label: string;
-    value: string;
-    icon: string;
-    iconColor: string;
-  }[] = [{ label: '', value: '', icon: '', iconColor: '' }];
+  @Input() actions: TableRowActionsType[] = [TableRowActionsTypeInitialized];
   @Input() isVisible: boolean = false;
   @Input() isMobile: boolean = false;
 
