@@ -9,12 +9,29 @@ import { Component, Input, OnInit, HostBinding } from '@angular/core';
   styleUrls: ['./mobile-table-row.component.scss'],
 })
 export class MobileTableRowComponent implements OnInit {
-  @Input() header: string = '';
-  @Input() text: string = '';
   @HostBinding('class.bg-gray-F9F9F9') @Input() isEven: boolean = true;
+  @Input() header: string = '';
+  @Input() text: any = '';
   @Input() isLast: boolean = true;
+  @Input() rowIndex: number = 0;
 
-  constructor() {}
+  menuIsVisible: boolean[] = [];
 
-  ngOnInit(): void {}
+  toggleVisibleMenu = (index: number) => {
+    this.menuIsVisible[index] = this.menuIsVisible[index] ? true : false;
+    this.menuIsVisible = this.menuIsVisible.map((el, i) => {
+      if (el === false && index === i) el = true;
+      else if (el === true && index === i) el = false;
+      else el = false;
+      return el;
+    });
+  };
+
+  constructor() {
+    console.log(this.rowIndex);
+  }
+
+  ngOnInit(): void {
+    console.log(this.header);
+  }
 }

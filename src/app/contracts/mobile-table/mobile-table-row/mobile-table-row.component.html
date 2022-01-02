@@ -1,6 +1,9 @@
 <p class="col-span-5 font-bold col-start-2">{{header}}</p>
-<p *ngIf="!isLast && header !== 'Status'"  class="col-span-6">{{text}}</p>
+<p *ngIf="!isLast && header !== 'Status'" class="col-span-6">{{text}}</p>
 <app-generic-label *ngIf="header === 'Status'" class="col-span-4 grid grid-cols-2" [text]="text">
 </app-generic-label>
 <app-svg-loader svgClasses="rotate-90 translate-x-3.5" *ngIf="isLast" class="col-span-6" iconName="three-dots"
- fillColor="#C4C4C4"></app-svg-loader>
+ fillColor="#C4C4C4" (click)="toggleVisibleMenu(rowIndex)"></app-svg-loader>
+<app-generic-actions-list class="z-10" [isMobile]="true" *ngIf="header === 'Actions'" [actions]="text"
+ [isVisible]="menuIsVisible[rowIndex]">
+</app-generic-actions-list>

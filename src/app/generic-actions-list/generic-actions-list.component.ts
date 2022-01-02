@@ -13,6 +13,8 @@ export class GenericActionsListComponent implements OnInit {
     iconColor: string;
   }[] = [{ label: '', value: '', icon: '', iconColor: '' }];
   @Input() isVisible: boolean = false;
+  @Input() isMobile: boolean = false;
+
   constructor() {}
 
   ngOnInit(): void {}
