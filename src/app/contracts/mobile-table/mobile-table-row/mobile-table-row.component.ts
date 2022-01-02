@@ -3,7 +3,7 @@ import { Component, Input, OnInit, HostBinding } from '@angular/core';
 @Component({
   selector: 'contracts-mobile-table-row',
   host: {
-    class: 'col-span-12 grid grid-cols-12  h-9 content-center',
+    class: 'col-span-12 grid grid-cols-12  h-9 content-center text-black-3B3B3B',
   },
   templateUrl: './mobile-table-row.component.html',
   styleUrls: ['./mobile-table-row.component.scss'],
