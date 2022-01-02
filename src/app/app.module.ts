@@ -36,6 +36,8 @@ import { ThreeDotsIconComponent } from './assets/svg/three-dots-icon/three-dots-
 import { ThreeBarsIconComponent } from './assets/svg/three-bars-icon/three-bars-icon.component';
 import { MobileTableComponent } from './contracts/mobile-table/mobile-table.component';
 import { MobileTableRowComponent } from './contracts/mobile-table/mobile-table-row/mobile-table-row.component';
+import { MessageComponent } from './contracts/message/message.component';
+import { MessageIconComponent } from './assets/svg/message-icon/message-icon.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,9 @@ import { MobileTableRowComponent } from './contracts/mobile-table/mobile-table-r
     ThreeDotsIconComponent,
     ThreeBarsIconComponent,
     MobileTableComponent,
-    MobileTableRowComponent
+    MobileTableRowComponent,
+    MessageComponent,
+    MessageIconComponent
   ],
   imports: [
     BrowserModule,
