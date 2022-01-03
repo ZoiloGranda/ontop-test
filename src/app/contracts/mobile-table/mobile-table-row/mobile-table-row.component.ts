@@ -1,20 +1,30 @@
 import { Component, Input, OnInit, HostBinding } from '@angular/core';
+import { DarkModeService } from '../../../dark-mode.service';
 
 @Component({
   selector: 'contracts-mobile-table-row',
   host: {
-    class: 'col-span-12 grid grid-cols-12  h-9 content-center text-black-3B3B3B',
+    class: 'col-span-12 grid grid-cols-12 h-9 content-center text-black-3B3B3B',
   },
   templateUrl: './mobile-table-row.component.html',
   styleUrls: ['./mobile-table-row.component.scss'],
 })
 export class MobileTableRowComponent implements OnInit {
-  @HostBinding('class.bg-gray-F9F9F9') @Input() isEven: boolean = true;
+  @Input() isEven: boolean = true;
+  @HostBinding('class.bg-gray-F9F9F9') get evenBgColor() {
+    return !this.dark && this.isEven;
+  }
+  @HostBinding('class.bg-gray-900') get darkThemeEven() {
+    return this.dark && this.isEven;
+  }
+  @HostBinding('class.bg-gray-800') get darkThemeUneven() {
+    return this.dark && !this.isEven;
+  }
   @Input() header: string = '';
   @Input() text: any = '';
   @Input() isLast: boolean = true;
   @Input() rowIndex: number = 0;
-
+  dark = false;
   menuIsVisible: boolean[] = [];
 
   toggleVisibleMenu = (index: number) => {
@@ -27,7 +37,11 @@ export class MobileTableRowComponent implements OnInit {
     });
   };
 
-  constructor() {}
+  constructor(private darkModeService: DarkModeService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.darkModeService.darkObservable.subscribe((value) => {
+      this.dark = value;
+    });
+  }
 }

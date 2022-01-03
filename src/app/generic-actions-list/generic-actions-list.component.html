@@ -1,8 +1,8 @@
 <div [ngClass]="{'grid grid-cols-1 absolute rounded-5px overflow-auto drop-shadow-custom-2' : true,
 'hidden': !isVisible, 'bottom-6 right-6': isMobile, 'right-36': !isMobile}">
- <div [ngClass]="{'col-span-1 grid grid-cols-12 h-10 bg-white content-center':true, 'custom-border-bottom': !last }"
+ <div [ngClass]="{'col-span-1 grid grid-cols-12 h-10 bg-white content-center dark:bg-slate-800':true, 'custom-border-bottom': !last }"
   *ngFor="let item of actions; index as i; last as last;">
   <app-svg-loader class="self-center col-start-2" [iconName]="item.icon" [fillColor]="item.iconColor"></app-svg-loader>
-  <p class="col-span-8 col-start-4 text-sm text-black-3B3B3B">{{item.label}}</p>
+  <p class="col-span-8 col-start-4 text-sm text-black-3B3B3B dark:text-gray-300">{{item.label}}</p>
  </div>
 </div>
