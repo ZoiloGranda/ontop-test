@@ -1,8 +1,8 @@
 <div *ngFor="let item of tableData.rows; index as i;"
  class="bg-white p-3 col-span-12 w-full text-left grid grid-flow-row auto-rows-auto rounded-5px drop-shadow-custom-2 dark:bg-slate-800">
- <div class="grid grid-cols-12"
-  *ngFor="let currentHeader of tableData.headers; index as headerIndex; even as even; last as last">
-  <contracts-mobile-table-row class="relative" [isLast]="last" [isEven]="even" [header]="currentHeader.label"
+ <div class="grid grid-cols-12 odd:bg-gray-50 even:dark:bg-gray-800 odd:dark:bg-gray-900"
+  *ngFor="let currentHeader of tableData.headers; index as headerIndex; last as last">
+  <contracts-mobile-table-row class="relative" [isLast]="last" [header]="currentHeader.label"
    [text]="item[currentHeader.key]" [rowIndex]="i">
   </contracts-mobile-table-row>
  </div>

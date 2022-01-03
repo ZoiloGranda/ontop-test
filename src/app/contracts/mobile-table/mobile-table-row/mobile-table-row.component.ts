@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, HostBinding } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { DarkModeService } from '../../../dark-mode.service';
 
 @Component({
@@ -10,16 +10,6 @@ import { DarkModeService } from '../../../dark-mode.service';
   styleUrls: ['./mobile-table-row.component.scss'],
 })
 export class MobileTableRowComponent implements OnInit {
-  @Input() isEven: boolean = true;
-  @HostBinding('class.bg-gray-F9F9F9') get evenBgColor() {
-    return !this.dark && this.isEven;
-  }
-  @HostBinding('class.bg-gray-900') get darkThemeEven() {
-    return this.dark && this.isEven;
-  }
-  @HostBinding('class.bg-gray-800') get darkThemeUneven() {
-    return this.dark && !this.isEven;
-  }
   @Input() header: string = '';
   @Input() text: any = '';
   @Input() isLast: boolean = true;
