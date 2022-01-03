@@ -1,5 +1,5 @@
 <div [ngClass]="{'col-span-12 grid grid-cols-12 h-9 content-center text-black-3B3B3B relative':true}">
- <p class="col-span-5 font-bold col-start-2 dark:text-gray-200">{{header}}</p>
+ <p class="col-span-5 font-bold col-start-2 dark:text-gray-200 truncate">{{header}}</p>
  <p *ngIf="!isLast && header !== 'Status'" class="col-span-6 dark:text-gray-400">{{text}}</p>
  <app-generic-label *ngIf="header === 'Status'" class="col-span-4 grid grid-cols-2" [text]="text">
  </app-generic-label>
